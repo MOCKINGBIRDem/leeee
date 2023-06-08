@@ -1,7 +1,7 @@
 header{
     background-color: darkcyan;
     color: white;
-    height: 100px;
+    height: 0px;
 }
 
 h3{
@@ -11,8 +11,10 @@ h3{
 }
 
 main{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    top:100%;
+
 }
 
 .logout{
@@ -29,4 +31,129 @@ main{
 .logout a:hover{
     color: white;
     text-decoration: none;
+}
+
+body {
+
+    background: url(../img/bibsa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    color: #2196f3;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    padding: 15px 30px;
+    transition:prop 0.2s;
+    background:black;
+    margin-top: 50px;
+
+
+}
+
+.button__line {
+    position: absolute;
+    display:block;
+}
+
+.button__line--top {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(90deg,transparent,#2196f3);
+}
+
+.button:hover .button__line--top {
+    left:100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.button__line--bottom {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(270deg,transparent,#2196f3);
+}
+
+.button:hover .button__line--bottom {
+    right:100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.button__line--left {
+    bottom: -100%;
+    left: 0%;
+    width: 2px;
+    height: 100%;
+    background:linear-gradient(0deg,transparent,#2196f3);
+}
+
+.button:hover .button__line--left {
+    bottom:100%;
+    transition: 1s;
+    transition-delay: 0s;
+}
+
+.button__line--right {
+    top: -100%;
+    right: 0%;
+    width: 2px;
+    height: 100%;
+    background:linear-gradient(180deg,transparent,#2196f3);
+}
+
+.button:hover .button__line--right {
+    top:100%;
+    transition: 1s;
+    transition-delay: 0s;
+}
+
+.button:hover  {
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition: 1s;
+    background-color:#2196f3;
+    color:#333;
+    transition-delay: 1s;
+}
+
+.nav {
+    color: #2196f3;
+    text-align: right!important;
+}
+
+.navi {
+    color: #2196f3;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 640px;
+}
+
+.habibi {
+    color: #2196f3;
+    text-align: right!important;
+}
+
+boobs {
+    color: #2196f3;
+    position: absolute;
+    margin-top: -90px;
+    margin-left: 130px;
+
+}
+
+aside {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 615px;
 }
